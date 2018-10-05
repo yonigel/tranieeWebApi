@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TraineeService } from '../../../../services/traineeService/trainee.service';
+import { Trainee } from '../../../../models/trainee.model';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-trainee-table',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TraineeTableComponent implements OnInit {
 
-  constructor() { }
+  private trainees: Observable<any>;
+
+  constructor(private traineeService: TraineeService) { }
 
   ngOnInit() {
+    this.trainees = this.traineeService.getAllTraineeis();
+
   }
 
 }

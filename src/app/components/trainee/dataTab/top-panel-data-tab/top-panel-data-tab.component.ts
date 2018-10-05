@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-top-panel-data-tab',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopPanelDataTabComponent implements OnInit {
 
-  constructor() { }
+  private filterFormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.filterFormGroup = this.formBuilder.group({
+      filter: ['']
+    });
+  }
+
+  private onFilterChanged(event): void {
+    console.log(`onFilterChanged() ${this.filterFormGroup.controls.filter.value}`);
+  }
+
+  private addTrainee(): void {
+    console.log(`addTrainee()`);
+  }
+
+  private removeTrainee(): void {
+    console.log(`removeTrainee()`);
   }
 
 }

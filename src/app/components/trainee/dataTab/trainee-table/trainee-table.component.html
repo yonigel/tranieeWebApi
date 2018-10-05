@@ -1,3 +1,34 @@
-<p>
-  trainee-table works!
-</p>
+<div class="row">
+  <div class="col-md-1">
+    ID
+  </div>
+  <div class="col-md-3">
+    Name
+  </div>
+  <div class="col-md-3">
+    Date
+  </div>
+  <div class="col-md-2">
+    Grade
+  </div>
+  <div class="col-md-3">
+    Subject
+  </div>
+</div>
+<div class="row" *ngFor="let trainee of trainees | async as Trainee">
+  <div class="col-md-1">
+    {{trainee.id}}
+  </div>
+  <div class="col-md-3">
+    {{trainee.name}}
+  </div>
+  <div class="col-md-3">
+    {{trainee.date}}
+  </div>
+  <div class="col-md-2">
+    {{trainee.grade}}
+  </div>
+  <div class="col-md-3">
+    {{trainee.subject}}
+  </div>
+</div>

@@ -12,6 +12,7 @@ import { DataTabFooterComponent } from './components/trainee/dataTab/data-tab-fo
 import { MainAnalysisTabComponent } from './components/trainee/analysisTab/main-analysis-tab/main-analysis-tab.component';
 import { MainMonitorTabComponent } from './components/trainee/monitorTab/main-monitor-tab/main-monitor-tab.component';
 import { MainTraineeComponent } from './components/trainee/main-trainee/main-trainee.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MainTraineeComponent } from './components/trainee/main-trainee/main-tra
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
