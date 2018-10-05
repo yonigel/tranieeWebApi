@@ -1,3 +1,22 @@
-<p>
-  main-trainee works!
-</p>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="data-tab" data-toggle="tab" href="#data" role="tab" aria-controls="data" aria-selected="true">Data</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="analysis-tab" data-toggle="tab" href="#analysis" role="tab" aria-controls="analysis" aria-selected="false">Analysis</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="monitor-tab" data-toggle="tab" href="#monitor" role="tab" aria-controls="monitor" aria-selected="false">Monitor</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="data" role="tabpanel" aria-labelledby="home-tab">
+    <app-main-data-tab></app-main-data-tab>
+  </div>
+  <div class="tab-pane fade" id="analysis" role="tabpanel" aria-labelledby="analysis-tab">
+    <app-main-analysis-tab></app-main-analysis-tab>
+  </div>
+  <div class="tab-pane fade" id="monitor" role="tabpanel" aria-labelledby="monitor-tab">
+    <app-main-monitor-tab></app-main-monitor-tab>
+  </div>
+</div>
