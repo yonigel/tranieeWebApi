@@ -11,6 +11,7 @@ import { TraineeDetailsComponent } from './components/trainee/dataTab/trainee-de
 import { DataTabFooterComponent } from './components/trainee/dataTab/data-tab-footer/data-tab-footer.component';
 import { MainAnalysisTabComponent } from './components/trainee/analysisTab/main-analysis-tab/main-analysis-tab.component';
 import { MainMonitorTabComponent } from './components/trainee/monitorTab/main-monitor-tab/main-monitor-tab.component';
+import { MainTraineeComponent } from './components/trainee/main-trainee/main-trainee.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MainMonitorTabComponent } from './components/trainee/monitorTab/main-mo
     TraineeDetailsComponent,
     DataTabFooterComponent,
     MainAnalysisTabComponent,
-    MainMonitorTabComponent
+    MainMonitorTabComponent,
+    MainTraineeComponent
   ],
   imports: [
     BrowserModule
