@@ -1,0 +1,14 @@
+C:\yonatan\projects\webApiAngularTrainee\bin\Debug\netcoreapp2.1\webApiAngularTrainee.deps.json
+C:\yonatan\projects\webApiAngularTrainee\bin\Debug\netcoreapp2.1\webApiAngularTrainee.runtimeconfig.json
+C:\yonatan\projects\webApiAngularTrainee\bin\Debug\netcoreapp2.1\webApiAngularTrainee.runtimeconfig.dev.json
+C:\yonatan\projects\webApiAngularTrainee\bin\Debug\netcoreapp2.1\webApiAngularTrainee.dll
+C:\yonatan\projects\webApiAngularTrainee\bin\Debug\netcoreapp2.1\webApiAngularTrainee.pdb
+C:\yonatan\projects\webApiAngularTrainee\obj\Debug\netcoreapp2.1\webApiAngularTrainee.csprojAssemblyReference.cache
+C:\yonatan\projects\webApiAngularTrainee\obj\Debug\netcoreapp2.1\webApiAngularTrainee.csproj.CoreCompileInputs.cache
+C:\yonatan\projects\webApiAngularTrainee\obj\Debug\netcoreapp2.1\webApiAngularTrainee.RazorAssemblyInfo.cache
+C:\yonatan\projects\webApiAngularTrainee\obj\Debug\netcoreapp2.1\webApiAngularTrainee.RazorAssemblyInfo.cs
+C:\yonatan\projects\webApiAngularTrainee\obj\Debug\netcoreapp2.1\webApiAngularTrainee.AssemblyInfoInputs.cache
+C:\yonatan\projects\webApiAngularTrainee\obj\Debug\netcoreapp2.1\webApiAngularTrainee.AssemblyInfo.cs
+C:\yonatan\projects\webApiAngularTrainee\obj\Debug\netcoreapp2.1\webApiAngularTrainee.RazorTargetAssemblyInfo.cache
+C:\yonatan\projects\webApiAngularTrainee\obj\Debug\netcoreapp2.1\webApiAngularTrainee.dll
+C:\yonatan\projects\webApiAngularTrainee\obj\Debug\netcoreapp2.1\webApiAngularTrainee.pdb
