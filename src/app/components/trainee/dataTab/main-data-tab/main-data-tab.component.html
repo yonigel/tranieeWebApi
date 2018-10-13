@@ -1,12 +1,12 @@
-<div class="row">
-  <app-top-panel-data-tab></app-top-panel-data-tab>
+<div class="row" style="width: 90%; margin: auto auto;">
+  <app-top-panel-data-tab [selectedTraineeId]="selectedTraineeId"></app-top-panel-data-tab>
 </div>
-<div class="row">
+<div class="row" style="width: 90%; margin: auto auto;">
   <div class="col-md-8">
-    <app-trainee-table></app-trainee-table>
+    <app-trainee-table (traineeSelected)="onSelectedTrainee($event)" [trainees]="trainees"></app-trainee-table>
   </div>
   <div class="col-md-4">
-    <app-trainee-details></app-trainee-details>
+    <app-trainee-details [selectedTraineeId]="selectedTraineeId"></app-trainee-details>
   </div>
 </div>
 <div class="row">

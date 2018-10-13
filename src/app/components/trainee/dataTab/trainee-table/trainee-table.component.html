@@ -1,4 +1,5 @@
 <div class="row">
+
   <div class="col-md-1">
     ID
   </div>
@@ -15,7 +16,7 @@
     Subject
   </div>
 </div>
-<div class="row" *ngFor="let trainee of trainees | async as Trainee">
+<div class="row trainee" (click)="selectedTrainee(trainee.id)" [ngClass]="{'evenTrainee': i%2 == 0, 'oddTrainee': i%2 != 0}" *ngFor="let trainee of trainees | async as Trainee ; let i = index">
   <div class="col-md-1">
     {{trainee.id}}
   </div>

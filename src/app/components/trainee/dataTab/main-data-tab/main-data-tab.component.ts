@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { TraineeService } from '../../../../services/traineeService/trainee.service';
 
 @Component({
   selector: 'app-main-data-tab',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainDataTabComponent implements OnInit {
 
-  constructor() { }
+  private trainees: Observable<any>;
+  private selectedTraineeId: number;
+
+  constructor(private traineeService: TraineeService) { }
 
   ngOnInit() {
+    this.trainees = this.traineeService.getAllTraineeis();
   }
 
+  private onSelectedTrainee(traineeId: number): void {
+    console.log(`onSelectedTrainee ${traineeId}`);
+    this.selectedTraineeId = traineeId;
+  }
 }

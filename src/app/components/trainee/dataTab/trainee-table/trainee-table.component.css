@@ -1,0 +1,16 @@
+.selectedTrainee {
+    background-color: black;
+}
+
+.oddTrainee {
+    background-color: #f2f2f2;
+}
+
+.evenTrainee {
+    background-color: #fafafa;
+}
+
+.trainee:hover {
+    background-color: #dbdbdb;
+}
+

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { TraineeService } from '../../../../services/traineeService/trainee.service';
 import { Trainee } from '../../../../models/trainee.model';
 import { Observable } from 'rxjs';
@@ -10,13 +10,20 @@ import { Observable } from 'rxjs';
 })
 export class TraineeTableComponent implements OnInit {
 
+  @Input()
   private trainees: Observable<any>;
 
-  constructor(private traineeService: TraineeService) { }
+  @Output()
+  private traineeSelected: EventEmitter<any> = new EventEmitter();
+
+  constructor() { }
 
   ngOnInit() {
-    this.trainees = this.traineeService.getAllTraineeis();
+  }
 
+  private selectedTrainee(index: number): void {
+    console.log(`selectedTrainee ${index}`);
+    this.traineeSelected.emit(index);
   }
 
 }

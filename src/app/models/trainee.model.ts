@@ -18,4 +18,8 @@ export class Trainee {
         this.email = email;
         this.address = address;
     }
+
+    getTraineeId() {
+        return this.id;
+    }
 }

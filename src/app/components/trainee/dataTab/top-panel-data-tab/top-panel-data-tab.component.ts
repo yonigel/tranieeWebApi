@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChange } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { TraineeService } from '../../../../services/traineeService/trainee.service';
+import { Trainee } from '../../../../models/trainee.model';
 
 @Component({
   selector: 'app-top-panel-data-tab',
@@ -7,6 +9,10 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./top-panel-data-tab.component.css']
 })
 export class TopPanelDataTabComponent implements OnInit {
+
+  @Input()
+  selectedTraineeId: string;
+
 
   private filterFormGroup;
 
@@ -27,7 +33,7 @@ export class TopPanelDataTabComponent implements OnInit {
   }
 
   private removeTrainee(): void {
-    console.log(`removeTrainee()`);
+    console.log(`removeTrainee() ${this.selectedTraineeId}`);
   }
 
 }

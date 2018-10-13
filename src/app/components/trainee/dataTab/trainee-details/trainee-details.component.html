@@ -1,3 +1,36 @@
-<p>
-  trainee-details works!
-</p>
+  Details:
+  <div *ngIf="selectedTrainee; else traineeNotSelected">
+    <p>
+      <b>ID:</b> <span class="badge badge-secondary traineeDetail">{{selectedTrainee.id}}</span>
+    </p>
+    <p>
+      <b>Name:</b> <span class="badge badge-secondary traineeDetail">{{selectedTrainee.name}}</span>
+    </p>
+    <p>
+      <b>Grade:</b> <span class="badge badge-secondary traineeDetail">{{selectedTrainee.grade}}</span>
+    </p>
+    <p>
+      <b>Date joined:</b> <span class="badge badge-secondary traineeDetail">{{selectedTrainee.date}}</span>
+    </p>
+    <p>
+      <b>Email:</b> <span class="badge badge-secondary traineeDetail">{{selectedTrainee.email}}</span>
+    </p>
+    <p>
+      <b>City:</b> <span class="badge badge-secondary traineeDetail">{{selectedTrainee.address.city}}</span>
+    </p>
+    <p>
+      <b>Country:</b> <span class="badge badge-secondary traineeDetail">{{selectedTrainee.address.country}}</span>
+    </p>
+    <p>
+      <b>Zip:</b> <span class="badge badge-secondary traineeDetail">{{selectedTrainee.address.zip}}</span>
+    </p>
+    <p>
+      <b>Subject:</b> <span class="badge badge-secondary traineeDetail">{{selectedTrainee.subject}}</span>
+    </p>
+  </div>
+
+  <ng-template #traineeNotSelected>
+      <div>
+        Please select trainee from the list.
+      </div>
+  </ng-template>

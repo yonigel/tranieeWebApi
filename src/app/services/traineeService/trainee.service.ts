@@ -10,7 +10,7 @@ export class TraineeService {
 
   constructor(private httpService: HttpService) { }
 
-  getAllTraineeis(): Observable<Trainee> {
+  getAllTraineeis(): Observable<any> {
     console.log(`getAllTraineeis()`);
     return this.httpService.get(`assets/trainees.json`);
   }
