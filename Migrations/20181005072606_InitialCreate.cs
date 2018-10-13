@@ -12,7 +12,8 @@ namespace webApiAngularTrainee.Migrations
                 {
                     BlogId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Url = table.Column<string>(nullable: true)
+                    Url = table.Column<string>(nullable: true),
+                    Lala = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -27,7 +28,7 @@ namespace webApiAngularTrainee.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Title = table.Column<string>(nullable: true),
                     Content = table.Column<string>(nullable: true),
-                    BlogId = table.Column<int>(nullable: false)
+                    BlogId = table.Column<int>(nullable: false),
                 },
                 constraints: table =>
                 {

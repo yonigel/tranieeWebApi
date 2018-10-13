@@ -22,6 +22,8 @@ namespace webApiAngularTrainee.Migrations
 
                     b.Property<string>("Url");
 
+                    b.Property<string>("Lala");
+
                     b.HasKey("BlogId");
 
                     b.ToTable("Blogs");
